@@ -1,4 +1,5 @@
 # import Ping360 class
+import numpy as np
 from brping import Ping360
 
 # Create Ping360 instance
@@ -20,7 +21,12 @@ with open("ping360_responses.txt", "w") as file:
     for x in range(400):
         # Transmit ping at the specified angle and get response
         response = p.transmitAngle(x)
-
+        print(response)
+        data = np.frombuffer(response.data, dtype=np.uint8)
+        print(data.min(), data.max())
+        # print all locations that are above threshold
+        threshold = 200
+        print(np.where(data >= threshold))
         # Write the response data to the file
         file.write(str(response) + "\n")
-        print(response)
+
