@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Ping Reader.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingAPI/src/PingAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingAPI/src/PingScript.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/20200926-110158491.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/تست دوم پرورش ماهی.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/داخل پایگاه.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۰۰۹۲۶-۱۱۰۶۲۴۱۲۱.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۰۰۹۲۶-۱۱۴۳۱۷۶۶۷.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۰۰۹۲۶-۱۲۰۴۰۹۹۲۹.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۰۰۹۲۶-۱۴۰۰۵۴۹۱۷.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۰۰۹۲۶-۱۴۱۷۱۷۶۶۱.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۱۰۶۱۱-۲۱۵۶۱۰۸۶۱.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۱۰۶۱۱-۲۲۰۱۲۵۴۵۶.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۱۰۶۱۱-۲۲۵۹۳۸۴۸۰.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۱۰۶۱۹-۲۱۳۳۳۸۴۹۲.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۰۲۲۰۳۴۶-1.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۰۴۱۲۲۷۵-2.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۰۵۳۳۷۷۵-3.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۰۶۳۵۷۶۷-4.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۰۷۳۳۲۴۳-5.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۰۸۵۱۳۲۶-6.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۱۰۳۹۴۰۹-7.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۱۱۳۷۸۹۰-8.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۱۲۳۹۷۱۰-9.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۲۶۰۴۸۹۱-10.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۲۷۳۸۴۲۰-11.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۳۵۳۱۲۲۷-12.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۳۸۰۶۲۴۵-13.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۴۳۱۲۱۳۷-14.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۴۴۳۴۴۰۴-15.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۴۵۵۴۲۷۴-20.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۴۶۴۸۳۵۰-19.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۴۷۵۳۰۲۴-16.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۵۰۰۶۱۷۸-17.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۵۱۴۵۹۵۱-21.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/scenario/۲۰۲۱۰۸۲۹-۰۰۵۳۳۵۵۱۱-18.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۸-۲۳۵۳۱۵۱۳۹.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۸-۲۳۵۷۵۰۸۶۳.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۰۰۵۷۸۹۵.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۰۱۴۲۱۰۳.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۱۷۵۵۳۱۷.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۲۰۲۳۹۷۵.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۲۴۲۸۳۰۶.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۳۰۱۱۷۲۱.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۳۲۴۳۰۶۱.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۳۳۵۱۲۹۸.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۳۹۴۷۰۲۷.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_02/۲۰۲۱۰۸۲۹-۰۰۵۵۱۶۶۶۶.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۸-۲۳۵۳۱۵۱۳۹.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۸-۲۳۵۷۵۰۸۶۳.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۰۰۵۷۸۹۵.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۰۱۴۲۱۰۳.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۰۲۲۰۳۴۶-1.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۰۴۱۲۲۷۵-2.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۰۵۳۳۷۷۵-3.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۰۶۳۵۷۶۷-4.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۰۷۳۳۲۴۳-5.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۰۸۵۱۳۲۶-6.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۱۰۳۹۴۰۹-7.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۱۱۳۷۸۹۰-8.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۱۲۳۹۷۱۰-9.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۱۷۵۵۳۱۷.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۲۰۲۳۹۷۵.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۲۴۲۸۳۰۶.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۲۶۰۴۸۹۱-10.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۲۷۳۸۴۲۰-11.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۳۰۱۱۷۲۱.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۳۲۴۳۰۶۱.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۳۳۵۱۲۹۸.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۳۵۳۱۲۲۷-12.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۳۸۰۶۲۴۵-13.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۳۹۴۷۰۲۷.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۴۳۱۲۱۳۷-14.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۴۴۳۴۴۰۴-15.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۴۵۵۴۲۷۴-20.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۴۶۴۸۳۵۰-19.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۴۷۵۳۰۲۴-16.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۵۰۰۶۱۷۸-17.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۵۱۴۵۹۵۱-21.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۵۳۳۵۵۱۱-18.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Sensor_Log_03/۲۰۲۱۰۸۲۹-۰۰۵۵۱۶۶۶۶.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/decode_sensor_binary_log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/20200926-110158491.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.me" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2cRr5B6H7XBoMjpoz14jFWfqjde" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/amirali/PycharmProjects/Ping Reader",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="" />
+      <created>1708085046594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708085046594</updated>
+    </task>
+    <servers />
+  </component>
+</project>
