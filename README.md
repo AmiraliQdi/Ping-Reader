@@ -8,9 +8,11 @@
 [![Gitter](https://img.shields.io/badge/gitter-online-green.svg)](https://gitter.im/bluerobotics/discussion/)
 [![PyPI version](https://badge.fury.io/py/bluerobotics-ping.svg)](https://badge.fury.io/py/bluerobotics-ping)
 
-Python library for the Ping sonar. Ping is the simple, affordable, and compact ultrasonic altimeter for any aquatic project.
+Python library for the Ping sonar. Ping is the simple, affordable, and compact ultrasonic altimeter for any aquatic
+project.
 
-This library exposes all functionality of the device, such as getting profiles, controlling parameters, switching modes, or just simply reading in the distance measurement.
+This library exposes all functionality of the device, such as getting profiles, controlling parameters, switching modes,
+or just simply reading in the distance measurement.
 
 [Available here](https://www.bluerobotics.com/store/sensors-sonars-cameras/sonar/ping-sonar-r2-rp/)
 
@@ -22,7 +24,6 @@ This library exposes all functionality of the device, such as getting profiles, 
 * [API Reference](https://docs.bluerobotics.com/ping-python/)
 * [Device Specifications](https://www.bluerobotics.com/store/sensors-sonars-cameras/sonar/ping-sonar-r2-rp/#tab-technical-details)
 
-
 ## Installing
 
 ### pip
@@ -30,14 +31,18 @@ This library exposes all functionality of the device, such as getting profiles, 
 ```sh
 $ pip install bluerobotics-ping --upgrade
 ```
+
  ---
 
 ## Scripts
 
-### PingAPI
+### Ping360.py
 
-PingAPI.py file can be used to make image representing an output for sonar scan using ping api.
+Basic ping360 example to perform full scan (use correct args to run script).
 
+### PingImageMaker
+
+PingImageMaker.py file can be used to make image representing an output for sonar scan using ping api.
 
 ### PingScript
 
@@ -55,7 +60,8 @@ ping360 API files forked from [main](https://github.com/bluerobotics/ping-python
 
 ## Quick Start
 
-The `bluerobotics-ping` package installs a `simplePingExample.py` script to get started. Place your device's file descriptor (eg. `/dev/ttyUSB0`, `COM1`) after the --device option.
+The `bluerobotics-ping` package installs a `simplePingExample.py` script to get started. Place your device's file
+descriptor (eg. `/dev/ttyUSB0`, `COM1`) after the --device option.
 
 `$ simplePingExample.py --device <your-device>`
 

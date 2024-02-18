@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="updated README.me" />
+    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="updated README.me on git">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/amirali/PycharmProjects/Ping Reader",
+    "last_opened_file_path": "/home/amirali/PycharmProjects/ping-viewer",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
   "keyToStringList": {
@@ -47,6 +49,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,13 +94,33 @@
       <option name="project" value="LOCAL" />
       <updated>1708235852036</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated README.me on git">
+      <option name="closed" value="true" />
+      <created>1708236073146</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708236073146</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="INITIALIZE" />
     <MESSAGE value="added README.me" />
     <MESSAGE value="updated README.me" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated README.me" />
+    <MESSAGE value="updated README.me on git" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README.me on git" />
   </component>
 </project>
