@@ -30,3 +30,17 @@ with open("ping360_responses.txt", "w") as file:
         # Write the response data to the file
         file.write(str(response) + "\n")
 
+
+
+def getSonarData(sensor, angle):
+    """
+    Transmits the sonar angle and returns the sonar intensities
+    Args:
+        sensor (Ping360): Sensor class
+        angle (int): Gradian Angle
+    Returns:
+        list: Intensities from 0 - 255
+    """
+    sensor.transmitAngle(angle)
+    data = bytearray(getattr(sensor, '_data'))
+    return [k for k in data]

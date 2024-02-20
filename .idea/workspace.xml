@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="updated README.me on git">
+    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="updated PingScript.py">
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/20200926-110158491.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingAPI/src/PingScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/PingAPI/src/PingScript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/Reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/decode_sensor_binary_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/PingViewerReader/PingDecoder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -29,14 +34,22 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2cRr5B6H7XBoMjpoz14jFWfqjde" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python.CSVWriter.executor": "Run",
+    "Python.PingDecoder.executor": "Run",
+    "Python.PingScript.executor": "Run",
+    "Python.decode_sensor_binary_log.executor": "Run",
+    "Python.ping360.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -52,6 +65,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PingViewerReader" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -102,8 +118,27 @@
       <option name="project" value="LOCAL" />
       <updated>1708236073146</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added ping360.py&#10;renamed PingAPI to PingImageMaker&#10;edited README.md">
+      <option name="closed" value="true" />
+      <created>1708264262167</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708264262167</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated PingScript.py">
+      <option name="closed" value="true" />
+      <created>1708264663214</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708264663214</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -117,10 +152,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="INITIALIZE" />
     <MESSAGE value="added README.me" />
     <MESSAGE value="updated README.me" />
     <MESSAGE value="updated README.me on git" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated README.me on git" />
+    <MESSAGE value="added ping360.py&#10;renamed PingAPI to PingImageMaker&#10;edited README.md" />
+    <MESSAGE value="updated PingScript.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated PingScript.py" />
   </component>
 </project>
