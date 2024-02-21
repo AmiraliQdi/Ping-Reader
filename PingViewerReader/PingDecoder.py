@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import csv
 import struct, sys, re
+import time
 from pathlib import Path
 
+import cv2
 import numpy as np
 
 # 3.7 for dataclasses, 3.8 for walrus (:=) in recovery
@@ -256,26 +258,6 @@ class Ping360Settings:
         return v_sound * self.sample_period_us * 1e-6 / 2
 
 
-if __name__ == "__main__":
-    logfile = Path("/home/amirali/PycharmProjects/Ping Reader/PingViewerReader/input/20200926-110158491.bin")
-    outfile = Path(logfile.stem).with_suffix(".csv")
-    log = PingViewerLogReader(logfile)
-    print(log.header)
-
-    # ask if processing
-    yes = input("Continue decoding and save in csv file received messages? [Y/n]: ")
-    if yes.lower() in ('n', 'no'):
-        pass
-    with outfile.open("w") as out:
-        csv_writer = csv.writer(out)
-        for index, (timestamp, decoded_message) in enumerate(log.parser()):
-            data = np.frombuffer(decoded_message.data, dtype=np.uint8)
-            print(data)
-            csv_writer.writerow(('timestamp:', repr(timestamp), decoded_message))
-            # print('timestamp:', repr(timestamp))
-            # print(data)
-
-
 def meters_per_sample(ping_message, v_sound=1500):
     """ Returns the target distance per sample, in meters.
 
@@ -286,5 +268,80 @@ def meters_per_sample(ping_message, v_sound=1500):
     # sample_period is in 25ns increments
     # time of flight includes there and back, so divide by 2
     return v_sound * ping_message.sample_period * 12.5e-9
+
+
+def find_min_max_intensity(ping_message):
+    data_min = 255
+    data_max = 0
+    for value in ping_message.data:
+        if value > data_max:
+            data_max = value
+        if value < data_min:
+            data_min = value
+    return data_min, data_max
+
+
+def find_high_intensity(threshold, ping_message):
+    counter = 0
+    index_list = []
+    for value in ping_message.data:
+        if value >= threshold:
+            index_list.append(counter)
+        counter += 1
+    return index_list
+
+
 # sample_start_distance = sample_index * meters_per_sample(ping_message, v_sound)
 # sample_average_distance = (sample_index + 0.5) * meters_per_sample(ping_message, v_sound)
+
+if __name__ == "__main__":
+    logfile = Path("/home/amirali/PycharmProjects/Ping Reader/PingViewerReader/input/dakhel.bin")
+    outfile = Path(logfile.stem).with_suffix(".csv")
+    log = PingViewerLogReader(logfile)
+    print(log.header)
+
+    max_range = 80 * 200 * 1450 / 2
+    step = 1
+    length = 640
+    image = np.zeros((length, length, 1), np.uint8)
+    angle = 0
+
+    # ask if processing
+    yes = input("Continue decoding and save in csv file received messages? [Y/n]: ")
+    if yes.lower() in ('n', 'no'):
+        pass
+    with outfile.open("w") as out:
+        csv_writer = csv.writer(out)
+        for index, (timestamp, decoded_message) in enumerate(log.parser()):
+            data = np.frombuffer(decoded_message.data, dtype=np.uint8)
+            print(data)
+            threshold = 250
+            index_list = find_high_intensity(threshold, decoded_message)
+            csv_writer.writerow(('timestamp:', repr(timestamp), decoded_message))
+            csv_writer.writerow(('bold_coordinate:', index_list[0] * meters_per_sample(decoded_message)))
+            print("---------------------------------------------------------------")
+            # print('timestamp:', repr(timestamp))
+            # print(data)
+
+            theta_ = []
+            r_ = []
+            color_ = []
+            data = decoded_message.data
+            data_lst = []
+            for k in data:
+                data_lst.append(k)
+            center = (length / 2, length / 2)
+            linear_factor = len(data_lst) / center[0]
+            for i in range(int(center[0])):
+                if (i < center[0] * max_range / max_range):
+                    pointColor = data_lst[int(i * linear_factor - 1)]
+                else:
+                    pointColor = 0
+                for k in np.linspace(0, step, 8 * step):
+                    image[int(center[0] + i * np.cos(2 * np.pi * (angle + k) / 400)), int(
+                        center[1] + i * np.sin(2 * np.pi * (angle + k) / 400)), 0] = pointColor
+            angle = (angle + step) % 400
+            # color = cv2.applyColorMap(image,cv2.COLORMAP_JET)
+            cv2.imshow('Sonar Image', image)
+            cv2.waitKey(25)
+            # time.sleep(5)
