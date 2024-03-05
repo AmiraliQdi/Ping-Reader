@@ -295,7 +295,7 @@ def find_high_intensity(threshold, ping_message):
 # sample_average_distance = (sample_index + 0.5) * meters_per_sample(ping_message, v_sound)
 
 if __name__ == "__main__":
-    logfile = Path("/home/amirali/PycharmProjects/Ping Reader/PingViewerReader/input/dakhel.bin")
+    logfile = Path("/home/amirali/PycharmProjects/Ping Reader/PingViewerReader/input/20210829-000+33243-5.bin")
     outfile = Path(logfile.stem).with_suffix(".csv")
     log = PingViewerLogReader(logfile)
     print(log.header)
@@ -305,31 +305,35 @@ if __name__ == "__main__":
     length = 640
     image = np.zeros((length, length, 1), np.uint8)
     angle = 0
-
+    main_matrix = []
     # ask if processing
     yes = input("Continue decoding and save in csv file received messages? [Y/n]: ")
     if yes.lower() in ('n', 'no'):
         pass
+    counter = 0
     with outfile.open("w") as out:
         csv_writer = csv.writer(out)
         for index, (timestamp, decoded_message) in enumerate(log.parser()):
+            counter += 1
+            # print(decoded_message)
+            # data = decoded_message.data
             data = np.frombuffer(decoded_message.data, dtype=np.uint8)
-            print(data)
+            # print(data)
+            # main_matrix.append(data)
             threshold = 250
             index_list = find_high_intensity(threshold, decoded_message)
             csv_writer.writerow(('timestamp:', repr(timestamp), decoded_message))
             csv_writer.writerow(('bold_coordinate:', index_list[0] * meters_per_sample(decoded_message)))
-            print("---------------------------------------------------------------")
+            # print("---------------------------------------------------------------")
             # print('timestamp:', repr(timestamp))
-            # print(data)
 
             theta_ = []
             r_ = []
             color_ = []
-            data = decoded_message.data
             data_lst = []
             for k in data:
                 data_lst.append(k)
+                main_matrix.append(k)
             center = (length / 2, length / 2)
             linear_factor = len(data_lst) / center[0]
             for i in range(int(center[0])):
@@ -345,3 +349,9 @@ if __name__ == "__main__":
             cv2.imshow('Sonar Image', image)
             cv2.waitKey(25)
             # time.sleep(5)
+
+    main_matrix = np.array(main_matrix)
+    main_matrix = np.reshape(main_matrix, (130200, 2))
+    print(main_matrix)
+    print(len(main_matrix))
+    print(f"messages count::{counter} | sample size::{len(data)} | {counter * len(data) == len(main_matrix)}")
