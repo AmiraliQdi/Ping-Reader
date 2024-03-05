@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="Now provide graphical view for log">
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/20210829-000+33243-5.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/dakhel.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/20210829-000+33243-5.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/20210829-000057895.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/dakhel.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/parvaresh.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/parvaresh.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/src/Reader.py" afterDir="false" />
+    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="Reader filed added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PingViewerReader/20200926-110158491.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PingViewerReader/PingDecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/PingViewerReader/PingDecoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PingViewerReader/input/20200926-110158491.bin" beforeDir="false" afterPath="$PROJECT_DIR$/PingViewerReader/input/20210828-235315139.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/src/Reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/PingViewerReader/src/Reader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708522222863</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Reader filed added">
+      <option name="closed" value="true" />
+      <created>1709654854052</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709654854052</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -186,6 +184,7 @@
     <MESSAGE value="updated PingScript.py" />
     <MESSAGE value="PingDecoder.py edited, now capable of decoding and making a csv file" />
     <MESSAGE value="Now provide graphical view for log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now provide graphical view for log" />
+    <MESSAGE value="Reader filed added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reader filed added" />
   </component>
 </project>

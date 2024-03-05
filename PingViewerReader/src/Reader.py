@@ -21,8 +21,9 @@ class Reader:
         file_addresses = []
         for root, dirs, files in os.walk(self.__folder_path):
             for file in files:
-                file_address = os.path.join(root, file)
-                file_addresses.append(file_address)
+                if file.endswith(".bin"):
+                    file_address = os.path.join(root, file)
+                    file_addresses.append(file_address)
         return file_addresses
 
     def print_file_list(self):
@@ -40,14 +41,14 @@ class Reader:
 
     def process_data(self):
         print("Processing...")
-        for key, value in self.__files_data.items():
+        for file_index, (key, value) in enumerate(self.__files_data.items()):
             for index, ping_message in enumerate(value):
                 for intensity in ping_message.data:
                     self.__main_matrix.append(intensity)
                 if index == self.__reading_angle - 1:
                     print(f"Angle limit reached ({len(value) - index} ping messages ignored)")
                     break
-            print(f"{key} file's data processed successfully")
+            print(f"{file_index}| {key} file's data processed successfully")
         self.reshape_main_matrix()
 
     def print_main_matrix_shape(self):
@@ -57,7 +58,7 @@ class Reader:
         self.__main_matrix = np.reshape(self.__main_matrix, (-1, self.__samples_count * self.__reading_angle))
 
 
-reader = Reader("../input")
+reader = Reader("../Ping-360")
 reader.print_file_list()
 reader.extract_data()
 reader.process_data()
