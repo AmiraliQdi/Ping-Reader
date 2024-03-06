@@ -1,4 +1,7 @@
+import csv
 import os
+from pathlib import Path
+
 import numpy as np
 
 import Helper
@@ -17,13 +20,15 @@ class Reader:
         self.__reading_angle = 90
         self.memory_monitor = Helper.MemoryMonitor()
 
-    def start(self):
+    def start(self, save_as):
         self.memory_monitor.start()
         try:
             self.print_file_list()
             self.extract_data()
             self.process_data()
             self.print_main_matrix_shape()
+            self.save_main_matrix(save_as)
+            raise Exception("Completed")
         except KeyboardInterrupt:
             self.memory_monitor.stop()
             self.memory_monitor.join()
@@ -85,13 +90,20 @@ class Reader:
         for value in message.data:
             self.__main_matrix.append(value)
 
+    def save_main_matrix(self, output_name):
+        print("Saving output matrix...")
+        outfile = Path("../output") / Path(output_name).with_suffix(".csv")
+        np.savetxt(outfile, self.__main_matrix, delimiter=',')
+        print("Saved successfully")
+
+
     def print_main_matrix_shape(self):
         print(np.array(self.__main_matrix).shape)
 
     def reshape_main_matrix(self):
-        print(np.array(self.__main_matrix).shape)
+        print("Reshaping main matrix...")
         self.__main_matrix = np.reshape(self.__main_matrix, (-1, self.__samples_count * self.__reading_angle))
 
 
 reader = Reader("../Ping-360")
-reader.start()
+reader.start("output")
