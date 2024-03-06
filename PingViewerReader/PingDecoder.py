@@ -295,7 +295,7 @@ def find_high_intensity(threshold, ping_message):
 # sample_average_distance = (sample_index + 0.5) * meters_per_sample(ping_message, v_sound)
 
 if __name__ == "__main__":
-    logfile = Path("/home/amirali/PycharmProjects/Ping Reader/PingViewerReader/input/20210829-000+33243-5.bin")
+    logfile = Path("/home/amirali/PycharmProjects/Ping Reader/PingViewerReader/Ping-360/Sensor_Log_01/۲۰۲۱۰۶۱۹-۲۱۳۳۳۸۴۹۲.bin")
     outfile = Path(logfile.stem).with_suffix(".csv")
     log = PingViewerLogReader(logfile)
     print(log.header)
