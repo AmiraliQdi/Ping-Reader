@@ -100,7 +100,7 @@ class Reader:
 
     def reshape_main_matrix(self):
         print("Reshaping main matrix...")
-        self.__main_matrix = np.reshape(self.__main_matrix, (-1, self.__samples_count, self.__reading_angle))
+        self.__main_matrix = np.reshape(self.__main_matrix, (-1,  self.__reading_angle, self.__samples_count))
         print(self.__main_matrix)
 
 
