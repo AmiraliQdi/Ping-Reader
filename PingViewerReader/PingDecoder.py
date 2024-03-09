@@ -315,7 +315,7 @@ if __name__ == "__main__":
         csv_writer = csv.writer(out)
         for index, (timestamp, decoded_message) in enumerate(log.parser()):
             counter += 1
-            # print(decoded_message)
+            print(decoded_message)
             # data = decoded_message.data
             data = np.frombuffer(decoded_message.data, dtype=np.uint8)
             # print(data)

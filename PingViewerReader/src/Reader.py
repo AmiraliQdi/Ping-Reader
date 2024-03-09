@@ -28,7 +28,6 @@ class Reader:
             self.process_data()
             self.print_main_matrix_shape()
             self.save_main_matrix(save_as)
-            raise Exception("Completed")
         except KeyboardInterrupt:
             self.memory_monitor.stop()
             self.memory_monitor.join()
@@ -92,18 +91,19 @@ class Reader:
 
     def save_main_matrix(self, output_name):
         print("Saving output matrix...")
-        outfile = Path("../output") / Path(output_name).with_suffix(".csv")
-        np.savetxt(outfile, self.__main_matrix, delimiter=',')
+        outfile = Path("../output") / Path(output_name).with_suffix(".npy")
+        np.save(outfile, self.__main_matrix)
         print("Saved successfully")
-
 
     def print_main_matrix_shape(self):
         print(np.array(self.__main_matrix).shape)
 
     def reshape_main_matrix(self):
         print("Reshaping main matrix...")
-        self.__main_matrix = np.reshape(self.__main_matrix, (-1, self.__samples_count * self.__reading_angle))
+        self.__main_matrix = np.reshape(self.__main_matrix, (-1, self.__samples_count, self.__reading_angle))
+        print(self.__main_matrix)
 
 
-reader = Reader("../Ping-360")
-reader.start("output")
+input_folder = "input"
+reader = Reader(f"../{input_folder}")
+reader.start(f"{input_folder}_output")
