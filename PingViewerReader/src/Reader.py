@@ -1,11 +1,10 @@
-import csv
 import os
 from pathlib import Path
 
 import numpy as np
 
 import Helper
-from PingViewerReader.PingDecoder import PingViewerLogReader
+from PingDecoder import PingViewerLogReader
 
 
 class Reader:
@@ -104,6 +103,6 @@ class Reader:
         print(self.__main_matrix)
 
 
-input_folder = "input"
+input_folder = "Ping-360"
 reader = Reader(f"../{input_folder}")
 reader.start(f"{input_folder}_output")
