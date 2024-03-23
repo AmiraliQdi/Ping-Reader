@@ -1,30 +1,17 @@
-# ping-python
+# Sonar Data Reader
 
-<a href="https://bluerobotics.com">
-<img src="https://avatars2.githubusercontent.com/u/7120633?v=3&s=200" align="left" hspace="10" vspace="6">
-</a>
+The Sonar Data Reader is a Python module designed to extract, process, visualize, and save sonar data stored in binary
+files. This module provides functionalities to easily work with sonar data collected from underwater surveys,
+experiments, or similar applications.
 
-[![Travis Build Status](https://travis-ci.org/bluerobotics/ping-python.svg?branch=master)](https://travis-ci.org/bluerobotics/ping-python)
-[![Gitter](https://img.shields.io/badge/gitter-online-green.svg)](https://gitter.im/bluerobotics/discussion/)
-[![PyPI version](https://badge.fury.io/py/bluerobotics-ping.svg)](https://badge.fury.io/py/bluerobotics-ping)
+## Installation
 
-Python library for the Ping sonar. Ping is the simple, affordable, and compact ultrasonic altimeter for any aquatic
-project.
+To use the Sonar Data Reader, follow these steps:
 
-This library exposes all functionality of the device, such as getting profiles, controlling parameters, switching modes,
-or just simply reading in the distance measurement.
+1. Clone the repository to your local machine
 
-[Available here](https://www.bluerobotics.com/store/sensors-sonars-cameras/sonar/ping-sonar-r2-rp/)
 
-<br/>
-<br/>
-
-## Resources
-
-* [API Reference](https://docs.bluerobotics.com/ping-python/)
-* [Device Specifications](https://www.bluerobotics.com/store/sensors-sonars-cameras/sonar/ping-sonar-r2-rp/#tab-technical-details)
-
-## Installing
+2. Install the required dependencies:
 
 ### pip
 
@@ -32,37 +19,64 @@ or just simply reading in the distance measurement.
 $ pip install bluerobotics-ping --upgrade
 ```
 
- ---
+---
 
-## Scripts
+## Usage
 
-### Ping360.py
+### Initializing the Reader
 
-Basic ping360 example to perform full scan (use correct args to run script).
+To start working with sonar data, initialize a `Reader` object with the path to the folder containing the binary files.
 
-### PingImageMaker
+```python
+from Reader import Reader
 
-PingImageMaker.py file can be used to make image representing an output for sonar scan using ping api.
-
-### PingScript
-
-PingScript.py file save a csv file containing response from ping360 device.
-
-### PingViewerReader
-
-ping360 API files forked from [main](https://github.com/bluerobotics/ping-python) BlueRobotics git repo.
+input_folder = "input"
+reader = Reader(f"../{input_folder}")
+```
 
 ---
+
+### Visualizing Sonar Data
+
+You can visualize sonar data using the sonar_view method. Provide the index of the file you want to visualize.
+
+```pycon
+reader.sonar_view(0)
+```
+
+---
+
+### Saving Processed Data
+
+Processed data can be saved to a file using the save_data method. Specify the desired output file name.
+
+```pycon
+reader.save_data(f"{input_folder}_output")
+```
+
+---
+
+### Examples
+
+Check out the provided examples to see the Sonar Data Reader in action:
+
+`example.py` : Demonstrates basic usage of the Reader class.
+
+---
+
+## Customization
+
+The Reader class allows for customization through parameters:
+
+samples_count: Number of samples per ping message (default: 1200).
+reading_angle: Angle for reading data from ping messages (default: 90).
+memory_monitor_flag: Flag to enable memory monitoring (default: False).
+Additional Functionalities
+The module also provides additional functionalities such as:
+
+Extracting custom samples from input data using extract_custom_samples.
+Advanced visualization capabilities with the _SonarView class.
 
 #### The library is ready to use: `import brping`. If you would like to use the command line [examples](/examples) or [tools](/tools) provided by this package, follow the notes in python's [installing to user site](https://packaging.python.org/tutorials/installing-packages/#installing-to-the-user-site) directions (eg `export PATH=$PATH:~/.local/bin`).
 
 ---
-
-## Quick Start
-
-The `bluerobotics-ping` package installs a `simplePingExample.py` script to get started. Place your device's file
-descriptor (eg. `/dev/ttyUSB0`, `COM1`) after the --device option.
-
-`$ simplePingExample.py --device <your-device>`
-
-It's also possible to connect via UDP server using the `--udp` option with IP:PORT as input (e.g `192.168.2.2:9090`).
