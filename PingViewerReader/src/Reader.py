@@ -164,7 +164,7 @@ class _SonarView:
         for decoded_message in ping_messages:
             data = np.frombuffer(decoded_message.data, dtype=np.uint8)
             data_lst = extract_custom_samples(data, 1)  # default value for indexing is 1
-            center = (self.__image_length / 2, self.__image_length / 1)
+            center = (self.__image_length / 2, self.__image_length / 2)
             linear_factor = len(data_lst) / center[0]
             for i in range(int(center[0])):
                 if i < center[0] * self.__max_range / self.__max_range:
@@ -177,6 +177,3 @@ class _SonarView:
             self.__current_angle = (self.__current_angle + self.__step) % 400
             cv2.imshow(f"file name: {file_name}", self.__image)
             cv2.waitKey(25)
-
-
-

@@ -1,6 +1,6 @@
 from Reader import Reader
 
-input_folder = "input"
-reader = Reader(f"../{input_folder}")
+reader = Reader(f"../input")
+reader.save_data(f"output")
 reader.sonar_view(0)
-reader.save_data(f"{input_folder}_output")
+
