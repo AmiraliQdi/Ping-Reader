@@ -7,6 +7,7 @@ from brping import PingParser, PingMessage
 from dataclasses import dataclass
 from typing import IO, Any, Set
 
+
 class MemoryMonitor(threading.Thread):
     def __init__(self, interval=1):
         super().__init__()
@@ -268,6 +269,7 @@ class Ping360Settings:
         """
         # time of flight -> v_sound * (there + back) / 2
         return v_sound * self.sample_period_us * 1e-6 / 2
+
 
 def indent(obj, by=' ' * 4):
     return by + str(obj).replace('\n', f'\n{by}')

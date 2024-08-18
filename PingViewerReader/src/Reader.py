@@ -1,7 +1,10 @@
+import csv
 import os
 from pathlib import Path
 import cv2
 import numpy as np
+from matplotlib import pyplot as plt
+
 import Helper  # Importing Helper module for utility functions and classes
 
 
@@ -118,6 +121,9 @@ class Reader:
     def print_main_matrix_shape(self):
         """Print the shape of the main matrix."""
         print(np.array(self.__main_matrix).shape)
+        # matrix = self.__main_matrix[0]
+        # with open('sample.txt', 'w') as f:
+        #     f.write(str(np.array(matrix).view()))
         print(f"Extracted {np.array(self.__main_matrix).shape[0]} examples from files")
 
     def reshape_main_matrix(self, output_form=3):
@@ -153,7 +159,8 @@ class _SonarView:
     def __init__(self, length=640, step=1):
         """Initialize SonarView object."""
         self.__image_length = length
-        self.__image = np.zeros((self.__image_length, self.__image_length, 1), np.uint8)
+        self.__image = np.zeros((self.__image_length, self.__image_length, 3), dtype=np.uint8)
+
         self.__max_range = 80 * 200 * 1450 / 2
         self.__step = step
         self.__current_angle = 0
@@ -161,19 +168,33 @@ class _SonarView:
     def view(self, ping_messages, file_name):
         """View sonar data."""
         print(f"making image for '{file_name}' with len {len(ping_messages)}")
+
+        colormap = plt.get_cmap('jet')  # Choose a colormap, 'jet' is a good option
+
         for decoded_message in ping_messages:
             data = np.frombuffer(decoded_message.data, dtype=np.uint8)
-            data_lst = extract_custom_samples(data, 1)  # default value for indexing is 1
+            data_lst = extract_custom_samples(data, 1)
             center = (self.__image_length / 2, self.__image_length / 2)
             linear_factor = len(data_lst) / center[0]
+
             for i in range(int(center[0])):
                 if i < center[0] * self.__max_range / self.__max_range:
-                    point_color = data_lst[int(i * linear_factor - 1)]
+                    intensity_value = data_lst[int(i * linear_factor - 1)]
                 else:
-                    point_color = 0
+                    intensity_value = 0
+
+                normalized_value = intensity_value / 255.0
+                rgb_color = colormap(normalized_value)[:3]  # Get RGB tuple, discard alpha channel
+                rgb_color = (np.array(rgb_color) * 255).astype(np.uint8)
+
+                # Reverse the RGB channels to make blue red and red blue
+                rgb_color = rgb_color[[2, 1, 0]]  # Swap red and blue
+
                 for k in np.linspace(0, self.__step, 8 * self.__step):
-                    self.__image[int(center[0] + i * np.cos(2 * np.pi * (self.__current_angle + k) / 400)), int(
-                        center[1] + i * np.sin(2 * np.pi * (self.__current_angle + k) / 400)), 0] = point_color
+                    x = int(center[0] + i * np.cos(2 * np.pi * (self.__current_angle + k) / 400))
+                    y = int(center[1] + i * np.sin(2 * np.pi * (self.__current_angle + k) / 400))
+                    self.__image[x, y] = rgb_color  # Assign reversed RGB color to the pixel
+
             self.__current_angle = (self.__current_angle + self.__step) % 400
             cv2.imshow(f"file name: {file_name}", self.__image)
             cv2.waitKey(25)
