@@ -171,10 +171,13 @@ class _SonarView:
 
         colormap = plt.get_cmap('jet')  # Choose a colormap, 'jet' is a good option
 
+        center = (self.__image_length // 2, self.__image_length // 2)  # Ensure center is integer
+        max_range = 60  # Max range in meters
+        meters_per_pixel = max_range / center[0]  # Calculate meters per pixel
+
         for decoded_message in ping_messages:
             data = np.frombuffer(decoded_message.data, dtype=np.uint8)
             data_lst = extract_custom_samples(data, 1)
-            center = (self.__image_length / 2, self.__image_length / 2)
             linear_factor = len(data_lst) / center[0]
 
             for i in range(int(center[0])):
@@ -196,5 +199,14 @@ class _SonarView:
                     self.__image[x, y] = rgb_color  # Assign reversed RGB color to the pixel
 
             self.__current_angle = (self.__current_angle + self.__step) % 400
+
+            # Draw grid lines and distance labels after plotting the data
+            for distance in [15, 25, 35, 45, 55]:
+                radius = int(distance / meters_per_pixel)
+                cv2.circle(self.__image, center, radius, (255, 255, 255), 1)  # Draw circle with white color
+                label_position = (center[0] + radius - 10, center[1] - 10)
+                cv2.putText(self.__image, f"{distance}m", label_position, cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                            (255, 255, 255), 1)
+
             cv2.imshow(f"file name: {file_name}", self.__image)
             cv2.waitKey(25)
