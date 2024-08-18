@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="Reader filed added">
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/output/output.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PingViewerReader/src/Reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/PingViewerReader/src/Reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/src/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/PingViewerReader/src/example.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/home/amirali/PycharmProjects/Ping Reader/PingViewerReader/input",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
