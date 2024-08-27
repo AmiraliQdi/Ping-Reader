@@ -115,6 +115,7 @@ class Reader:
         """Save the main matrix data to a file."""
         print("Saving output matrix...")
         outfile = Path("../output") / Path(output_name).with_suffix(".npy")
+        print(self.__main_matrix)
         np.save(outfile, self.__main_matrix)
         print("Saved successfully")
 
