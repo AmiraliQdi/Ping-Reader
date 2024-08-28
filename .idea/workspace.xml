@@ -4,10 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="Reader filed added">
-      <change afterPath="$PROJECT_DIR$/PingViewerReader/output/output.npy" afterDir="false" />
+    <list default="true" id="c63e0153-236f-4c13-b02f-b6a3f2cb8b6b" name="Changes" comment="README.md updated">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/۲۰۲۴۰۸۱۴-۱۰۱۱۵۴۳۶۵.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/۲۰۲۴۰۸۱۴-۱۰۲۳۳۷۶۷۳.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/۲۰۲۴۰۸۱۴-۱۰۲۸۴۱۳۶۶.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/۲۰۲۴۰۸۱۴-۱۰۳۱۴۶۴۸۴.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/10.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/11.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/12.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/13.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/14.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/15.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/16.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/17.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/18.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/19.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/20.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/21.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/22.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/4.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/5.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/6.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/7.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/8.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Labled/9.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/10.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/11.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/12.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/13.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/14.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/15.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/16.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/17.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/18.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/19.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/20.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/21.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/22.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/4.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/5.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/6.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/7.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/8.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/Database picture/Pics/9.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/WorkingData/۲۰۲۴۰۸۱۴-۱۰۱۱۵۴۳۶۵.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/WorkingData/۲۰۲۴۰۸۱۴-۱۰۲۳۳۷۶۷۳.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/WorkingData/۲۰۲۴۰۸۱۴-۱۰۲۸۴۱۳۶۶.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/Ping-360/WorkingData/۲۰۲۴۰۸۱۴-۱۰۳۱۴۶۴۸۴.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/65.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/66.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/73.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PingViewerReader/input/84.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PingViewerReader/src/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/PingViewerReader/src/example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/input/۲۰۲۴۰۸۱۴-۱۰۱۱۵۴۳۶۵.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/3.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/input/۲۰۲۴۰۸۱۴-۱۰۲۳۳۷۶۷۳.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/2.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/input/۲۰۲۴۰۸۱۴-۱۰۲۸۴۱۳۶۶.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/1.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/input/۲۰۲۴۰۸۱۴-۱۰۳۱۴۶۴۸۴.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_18_2024_4_22_PM_[Changes]/0.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PingViewerReader/output/images/raw.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +84,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,42 +106,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.CSVWriter.executor": "Run",
-    "Python.PingDecoder.executor": "Run",
-    "Python.PingScript.executor": "Run",
-    "Python.Reader.executor": "Run",
-    "Python.decode_sensor_binary_log.executor": "Run",
-    "Python.ping360.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/home/amirali/PycharmProjects/Ping Reader/PingViewerReader/input",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.CSVWriter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PingDecoder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PingScript.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Reader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.decode_sensor_binary_log.executor&quot;: &quot;Run&quot;,
+    &quot;Python.example.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ping360.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;data-extract&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;A:/repos/git/Reader/PingViewerReader/input&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Markdown"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Markdown&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/PingViewerReader/input" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="A:\repos\git\Reader\PingViewerReader\input" />
+      <recent name="A:\repos\git\Reader\PingViewerReader" />
+      <recent name="A:\repos\git\Reader\PingViewerReader\Ping-360" />
+      <recent name="A:\repos\git\Reader\PingViewerReader\Ping-360\WorkingData" />
+      <recent name="A:\repos\git\Reader\PingViewerReader\Ping-360\1403_05_24\BIN" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\repos\git\Reader\PingViewerReader\output\images\raw" />
       <recent name="$PROJECT_DIR$/PingViewerReader" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
@@ -86,6 +166,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708085046594</updated>
+      <workItem from="1723985460427" duration="2864000" />
+      <workItem from="1724422352192" duration="598000" />
+      <workItem from="1724493890385" duration="344000" />
+      <workItem from="1724773881683" duration="17533000" />
+      <workItem from="1724839624425" duration="711000" />
+      <workItem from="1724840595328" duration="645000" />
+      <workItem from="1724850877242" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="INITIALIZE">
       <option name="closed" value="true" />
@@ -159,8 +246,51 @@
       <option name="project" value="LOCAL" />
       <updated>1709654854052</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="New Data added">
+      <option name="closed" value="true" />
+      <created>1723985734706</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723985734706</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added Render Class">
+      <option name="closed" value="true" />
+      <created>1724793776543</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724793776543</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added gitignore">
+      <option name="closed" value="true" />
+      <created>1724794301594</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724794301594</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added Main matrix as 3 layer matrix instead of flatten and few rework on functionalities">
+      <option name="closed" value="true" />
+      <created>1724852311010</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724852311010</updated>
+    </task>
+    <task id="LOCAL-00014" summary="README.md updated">
+      <option name="closed" value="true" />
+      <created>1724852346088</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1724852346088</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
@@ -187,6 +317,15 @@
     <MESSAGE value="PingDecoder.py edited, now capable of decoding and making a csv file" />
     <MESSAGE value="Now provide graphical view for log" />
     <MESSAGE value="Reader filed added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reader filed added" />
+    <MESSAGE value="New Data added" />
+    <MESSAGE value="Added Render Class" />
+    <MESSAGE value="added gitignore" />
+    <MESSAGE value="Added Main matrix as 3 layer matrix instead of flatten and few rework on functionalities" />
+    <MESSAGE value="README.md updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md updated" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Reader$Reader.coverage" NAME="Reader Coverage Results" MODIFIED="1724796335837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PingViewerReader/src" />
+    <SUITE FILE_PATH="coverage/Reader$example.coverage" NAME="example Coverage Results" MODIFIED="1724850958852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PingViewerReader/src" />
   </component>
 </project>
