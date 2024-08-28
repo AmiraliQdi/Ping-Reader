@@ -1,15 +1,13 @@
-import csv
 import os
 from pathlib import Path
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-
-import Helper  # Importing Helper module for utility functions and classes
+import Helper
 
 
 class Reader:
-    def __init__(self, folder_path, samples_count=1200, reading_angle=90, memory_monitor_flag=False):
+    def __init__(self, folder_path, samples_count=1200, reading_angle=100, memory_monitor_flag=False):
         """Initialize Reader object.
 
         Parameters:
@@ -21,6 +19,7 @@ class Reader:
         self.__folder_path = folder_path
         self.__files_address = self.list_files_in_folder()
         self.__main_matrix = []
+        self.matrix = []
         self.__files_data = {}
         self.__files_count = len(self.__files_address)
         self.__samples_count = samples_count
@@ -33,7 +32,6 @@ class Reader:
         self.print_file_list()
         self.extract_data()
         self.process_data()
-        self.reshape_main_matrix()
         self.print_main_matrix_shape()
 
     def save_data(self, save_as):
@@ -91,6 +89,17 @@ class Reader:
             self.__extract_example(key, value, file_index)
 
     def __extract_example(self, file, ping_messages, file_index, example_limit=-1):
+        last_message = ping_messages[0]
+        starting_index = -1
+        for i in range(1, len(ping_messages)):
+            if last_message.angle == 250 and ping_messages[i].angle == 249:
+                starting_index = i - 1
+                break
+            else:
+                last_message = ping_messages[i]
+
+        ping_messages = ping_messages[starting_index:]
+
         """Extract example data from ping messages."""
         examples_count = int(len(ping_messages) / self.__reading_angle)
         if example_limit == -1 or example_limit > examples_count:
@@ -98,42 +107,37 @@ class Reader:
         if examples_count < 1:
             print(f"{file_index} | {0} examples processed!")
             return
-        for i in range(example_limit):
-            for j in range(self.__reading_angle):
-                self.__extract_values_from_messages(file_index, ping_messages[j + (i * self.__reading_angle)])
-        print(f"{file_index} | {example_limit} examples processed successfully")
 
-    def __extract_values_from_messages(self, file_index, message):
-        """Extract values from ping messages."""
-        if len(message.data) != self.__samples_count:
-            raise Exception(
-                f"{file_index}| file is corrupted (wrong sample count:{len(message.data)} != {self.__samples_count})")
-        for value in message.data:
-            self.__main_matrix.append(value)
+        for i in range(example_limit):
+            new_sample = []
+
+            for j in range(self.__reading_angle):
+                message = ping_messages[j + (i * self.__reading_angle)
+                                        ]
+                if len(message.data) != self.__samples_count:
+                    raise Exception(
+                        f"{file_index}| file is corrupted (wrong sample count:"
+                        f"{len(message.data)} != {self.__samples_count})")
+
+                temp_data = []
+                for value in message.data:
+                    temp_data.append(value)
+                new_sample.append(temp_data)
+
+            self.matrix.append(new_sample)
+
+        print(f"{file_index} | {example_limit} examples processed successfully")
 
     def save_main_matrix(self, output_name):
         """Save the main matrix data to a file."""
         print("Saving output matrix...")
         outfile = Path("../output") / Path(output_name).with_suffix(".npy")
-        print(self.__main_matrix)
-        np.save(outfile, self.__main_matrix)
+        np.save(outfile, np.array(self.matrix))
         print("Saved successfully")
 
     def print_main_matrix_shape(self):
         """Print the shape of the main matrix."""
-        print(np.array(self.__main_matrix).shape)
-        # matrix = self.__main_matrix[0]
-        # with open('sample.txt', 'w') as f:
-        #     f.write(str(np.array(matrix).view()))
-        print(f"Extracted {np.array(self.__main_matrix).shape[0]} examples from files")
-
-    def reshape_main_matrix(self, output_form=3):
-        """Reshape the main matrix."""
-        print("Reshaping main matrix...")
-        if output_form == 3:
-            self.__main_matrix = np.reshape(self.__main_matrix, (-1, self.__reading_angle, self.__samples_count))
-        elif output_form == 2:
-            self.__main_matrix = np.reshape(self.__main_matrix, (-1, self.__reading_angle * self.__samples_count))
+        print(f"Extracted {len(self.matrix)} examples from files")
 
     def sonar_view(self, file_index):
         """Visualize sonar data from a file."""

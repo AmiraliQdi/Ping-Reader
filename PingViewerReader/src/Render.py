@@ -9,7 +9,7 @@ from pip._internal import resolution
 
 class Render:
 
-    def __init__(self, matrix_path, mode='rgb', resolution=(1024, 768)):
+    def __init__(self, matrix_path, mode='rgb', resolution=(1200, 90)):
         self.output_file_path = matrix_path
         self.matrix = np.load(self.output_file_path)
         self.cmap = plt.get_cmap('jet')
@@ -78,7 +78,7 @@ class Render:
             img_resized = img_pil.resize(target_resolution, Image.ANTIALIAS)
 
             # Ensure the output directory exists
-            output_dir = os.path.join(path, 'raw')
+            output_dir = os.path.join(path, '')
             os.makedirs(output_dir, exist_ok=True)
 
             # Save the image with the desired resolution
