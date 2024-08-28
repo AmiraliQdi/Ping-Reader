@@ -18,20 +18,42 @@ To use the Sonar Data Reader, follow these steps:
 ```sh
 $ pip install bluerobotics-ping --upgrade
 ```
+## Required Libraries
 
----
+Before running the code, make sure you have the following Python libraries installed:
+
+```python
+# pathlib
+# cv2
+# numpy
+# matplotlib
+# re
+# struct
+# psutil
+```
 
 ## Usage
 
 ### Initializing the Reader
 
-To start working with sonar data, initialize a `Reader` object with the path to the folder containing the binary files.
+The primary script processes log files located in the input directory and outputs processed data and images in the output directory. Below is a brief overview of how the provided code works.
 
 ```python
+from PingViewerReader.src.Render import Render
 from Reader import Reader
 
-input_folder = "input"
-reader = Reader(f"../{input_folder}")
+# Make Reader to parse logs in 'input' folder
+reader = Reader(f"../input")
+
+# Save output of parser in 'output' folder as .npy file
+reader.save_data(f"output")
+
+# Sonar view of third (index = 2) log file
+reader.sonar_view(2)
+
+# Render class for making images of output file
+Render(matrix_path='../output/output.npy', mode='rgb').run()
+
 ```
 
 ---
@@ -51,7 +73,17 @@ reader.sonar_view(0)
 Processed data can be saved to a file using the save_data method. Specify the desired output file name.
 
 ```pycon
-reader.save_data(f"{input_folder}_output")
+reader.save_data(f"output")
+```
+
+---
+
+### Making Images
+
+Processed data then can be rendered to images based on output matrix with 'Render' class
+
+```pycon
+Render(matrix_path='../output/output.npy', mode='rgb').run()
 ```
 
 ---
@@ -60,7 +92,7 @@ reader.save_data(f"{input_folder}_output")
 
 Check out the provided examples to see the Sonar Data Reader in action:
 
-`example.py` : Demonstrates basic usage of the Reader class.
+`/PingViewrReader/src/example.py` : Demonstrates basic usage of the Reader and Render classes.
 
 ---
 
